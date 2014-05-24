@@ -2,6 +2,6 @@ module Palindrome
   extend self
 
   def palindrome?(str)
-    false
+  str.delete(" ,.!?;:").downcase == str.delete(" ,.!?;:").reverse.downcase ? true : false
   end
 end
