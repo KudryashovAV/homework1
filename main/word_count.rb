@@ -2,6 +2,6 @@ module Words
   extend self
 
   def count(str)
-    str.delete(",.!?;:").downcase.split.group_by {|i| i = i}
+    Hash[str.downcase.split(/\W+/).group_by {|i| i}.map {|x,y| [x, y.length]}]
   end
 end
