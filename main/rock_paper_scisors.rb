@@ -25,11 +25,11 @@ class RockPaperScissors
         end
     end
     case 
-      when stroke1 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize) and  @stroke2 == (s.to_s.capitalize || r.to_s.capitalize || p.to_s.capitalize)
+      when stroke1 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize) and  stroke2 == (s.to_s.capitalize || r.to_s.capitalize || p.to_s.capitalize)
         name1 
-      when stroke1 == (s.to_s.capitalize || r.to_s.capitalize || p.to_s.capitalize) and  @stroke2 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize)
+      when stroke1 == (s.to_s.capitalize || r.to_s.capitalize || p.to_s.capitalize) and  stroke2 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize)
         name2 
-      when stroke1 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize) and  @stroke2 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize)
+      when stroke1 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize) and  stroke2 == (r.to_s.capitalize || p.to_s.capitalize || s.to_s.capitalize)
       	name1
     end
   end
