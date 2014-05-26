@@ -1,7 +1,8 @@
 module Anagram
   extend self
-
-  def anagrams(str)
-    str.delete(",.!?;:").downcase.split.each{|x, y| x.chars.sort.join == y.chars.sort.join}
-  end
+    def anagrams(str)
+      str.split(/\W+|\d/).group_by {|i| i.chars.sort_by(&:downcase).join}.values
+    end
 end
+
+
